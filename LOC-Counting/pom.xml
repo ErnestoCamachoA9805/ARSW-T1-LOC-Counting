@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>LOC-Counting</name>
   <url>http://maven.apache.org</url>
+  <properties>
+     <maven.compiler.source>16</maven.compiler.source>
+     <maven.compiler.target>16</maven.compiler.target> 
+ </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
