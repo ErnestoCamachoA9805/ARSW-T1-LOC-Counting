@@ -16,12 +16,12 @@ public class LOCcount{
         }
      }
 
+     /**
+      * this Function returns the amout of lines int an archive, or archives in a directory and prints all lines
+      * @param inFile : File -> the archive or diector
+      * @return int : counter -> the amount of lines in an archive  or archives in a directory
+      */
      public static int phyCount(File inFile){
-         /**
-          * this Function returns the amout of lines int an archive, or archives in a directory and prints all lines
-          * @param inFile : File -> the archive or diectory
-          * @return int : counter -> the amount of lines in an archive  or archives in a directory
-          */
           int counter= 0;
           if (inFile.isDirectory()){
               for(File fileEntry: inFile.listFiles()){
@@ -44,12 +44,12 @@ public class LOCcount{
           return counter;
      }
 
-     public static int locCount(File inFile){
         /**
-         * this Function returns the amout of lines int an archive, or archives in a directory and prints all lines 
-         * @param inFile : File -> the archive or diectory
-         * @return int : counter -> the amount of lines in an archive  or archives in a directory(ignores blank or comented lines)
-         */
+        * this Function returns the amout of lines int an archive, or archives in a directory and prints all lines 
+        * @param inFile : File -> the archive or diectory
+        * @return int : counter -> the amount of lines in an archive  or archives in a directory(ignores blank or comented lines)
+        */
+     public static int locCount(File inFile){
          int counter= 0;
          if (inFile.isDirectory()){
              for(File fileEntry: inFile.listFiles()){
